@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Claudia Consultora de Vendas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<script src="js/script.js"></script>
+<body>
+
+<header class="topbar">
+
+  <div class="brand">
+    Claudia • Consultora de Vendas
+  </div>
+
+  <h1>🏡 Encontre seu novo lar</h1>
+
+  <div class="tabs">
+
+    <button class="tab active" onclick="showTab('domus', this)">
+      Residencial Domus
+    </button>
+
+    <button class="tab" onclick="showTab('villagio', this)">
+      Residencial Villagio Di Parma
+    </button>
+
+  </div>
+
+</header>
+
+<!-- DOMUS -->
+<section id="domus" class="content active">
+
+  <h2>Residencial Domus</h2>
+
+  <button class="btn" onclick="toggleInfo('domusInfo')">
+    💬 Quero saber mais
+  </button>
+
+  <div id="domusInfo" class="info hidden">
+    <ul>
+      <li>🏠 Apartamentos modernos</li>
+      <li>📍 Localização privilegiada</li>
+      <li>💎 Ideal para morar ou investir</li>
+    </ul>
+  </div>
+
+  <!-- CARROSSEL -->
+  <div class="carousel">
+
+    <img src="https://i.ibb.co/B09RD2p/1.jpg" onclick="openImage(this.src)">
+    <img src="https://i.ibb.co/V0MXS8FG/2.jpg" onclick="openImage(this.src)">
+    <img src="https://i.ibb.co/chg5Nt72/3.jpg" onclick="openImage(this.src)">
+    <img src="https://i.ibb.co/qYSzydwB/4.jpg" onclick="openImage(this.src)">
+
+  </div>
+
+</section>
+
+<!-- VILLAGIO -->
+<section id="villagio" class="content">
+
+  <h2>Residencial Villagio Di Parma</h2>
+
+  <button class="btn" onclick="toggleInfo('villagioInfo')">
+    ✨ Quero saber mais
+  </button>
+
+  <div id="villagioInfo" class="info hidden">
+
+    <ul>
+
+      <li>🏠 2 quartos</li>
+      <li>🛋️ Sala e cozinha integrada</li>
+      <li>🚿 Banheiro</li>
+
+      <li class="title">🌿 Áreas externas</li>
+
+      <li>🚗 Vaga de carro</li>
+      <li>🛝 Playground</li>
+      <li>🏐 Quadra poliesportiva</li>
+      <li>🍖 Quiosque com churrasqueira</li>
+      <li>🎉 Salão de festas</li>
+      <li>🛡️ Segurança 24 horas</li>
+
+    </ul>
+
+  </div>
+
+  <!-- CARROSSEL -->
+  <div class="carousel">
+
+    <img src="https://i.ibb.co/d04Qwvq9/IMG-20260524-WA0008.jpg" onclick="openImage(this.src)">
+    <img src="https://i.ibb.co/TFWQgM1/IMG-20260524-WA0004.jpg" onclick="openImage(this.src)">
+    <img src="https://i.ibb.co/tPmt9SPK/IMG-20260524-WA0003.jpg" onclick="openImage(this.src)">
+    <img src="https://i.ibb.co/nNy8MMvj/IMG-20260524-WA0006.jpg" onclick="openImage(this.src)">
+
+  </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
