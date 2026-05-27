@@ -1,22 +1,21 @@
-function showTab(tab, btn){
+function showTab(tabId) {
 
-  document.querySelectorAll(".content").forEach(c => c.classList.remove("active"));
-  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    const tabs = document.querySelectorAll('.tab-content');
 
-  document.getElementById(tab).classList.add("active");
-  btn.classList.add("active");
+    tabs.forEach(tab => {
+        tab.style.display = 'none';
+    });
+
+    document.getElementById(tabId).style.display = 'block';
 }
 
-/* 🔥 CORREÇÃO PRINCIPAL DO BOTÃO */
-function toggleInfo(id){
+function toggleInfo() {
 
-  const el = document.getElementById(id);
+    const info = document.getElementById('extraInfo');
 
-  if(!el) return; // evita erro
-
-  if(el.classList.contains("hidden")){
-    el.classList.remove("hidden");
-  } else {
-    el.classList.add("hidden");
-  }
+    if (info.style.display === 'none') {
+        info.style.display = 'block';
+    } else {
+        info.style.display = 'none';
+    }
 }
